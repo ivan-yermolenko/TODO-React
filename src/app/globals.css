@@ -1,6 +1,6 @@
 :root {
-  --background: #030712;
-  --foreground: #f3f4f6;
+  --background: #f9fafb;
+  --foreground: #111827;
   --font-sans: var(--font-geist-sans), Inter, system-ui, -apple-system, sans-serif;
   --font-mono: var(--font-geist-mono), monospace;
 }
@@ -38,14 +38,14 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #030712;
+  background: #f9fafb;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1f2937;
+  background: #d1d5db;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #374151;
+  background: #9ca3af;
 }

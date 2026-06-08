@@ -1,11 +1,9 @@
 .formContainer {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
     padding: 2.5rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     max-width: 600px;
     margin: 2rem auto;
     display: flex;
@@ -16,11 +14,8 @@
 .formTitle {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #ffffff;
-    background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: #111827;
+    border-bottom: 1px solid #e5e7eb;
     padding-bottom: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -33,18 +28,18 @@
 
 .label {
     font-size: 0.9rem;
-    font-weight: 500;
-    color: #9ca3af;
+    font-weight: 600;
+    color: #374151;
 }
 
 .input,
 .textarea,
 .select {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
     padding: 0.75rem 1rem;
-    color: #f3f4f6;
+    color: #111827;
     font-size: 0.95rem;
     transition: all 0.2s ease;
     outline: none;
@@ -54,9 +49,8 @@
 .input:focus,
 .textarea:focus,
 .select:focus {
-    border-color: rgba(99, 102, 241, 0.5);
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
 .textarea {
@@ -65,8 +59,8 @@
 }
 
 .select option {
-    background: #111827;
-    color: #f3f4f6;
+    background: #ffffff;
+    color: #111827;
 }
 
 .checkboxGroup {
@@ -81,13 +75,13 @@
 .checkbox {
     width: 1.2rem;
     height: 1.2rem;
-    accent-color: #6366f1;
+    accent-color: #2563eb;
     cursor: pointer;
 }
 
 .checkboxLabel {
     font-size: 0.95rem;
-    color: #e5e7eb;
+    color: #374151;
     cursor: pointer;
 }
 
@@ -96,7 +90,7 @@
     justify-content: flex-end;
     gap: 1rem;
     margin-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid #e5e7eb;
     padding-top: 1.5rem;
 }
 
@@ -106,7 +100,7 @@
     font-size: 0.95rem;
     font-weight: 600;
     padding: 0.75rem 1.5rem;
-    border-radius: 10px;
+    border-radius: 6px;
     cursor: pointer;
     transition: all 0.2s ease;
     display: inline-flex;
@@ -116,38 +110,38 @@
 }
 
 .submitBtn {
-    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    background: #2563eb;
     color: #ffffff;
-    border-color: rgba(99, 102, 241, 0.4);
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+    border-color: #2563eb;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .submitBtn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
+    background: #1d4ed8;
+    border-color: #1d4ed8;
 }
 
 .cancelBtn {
-    background: rgba(255, 255, 255, 0.05);
-    color: #d1d5db;
-    border-color: rgba(255, 255, 255, 0.1);
+    background: #ffffff;
+    color: #4b5563;
+    border-color: #d1d5db;
 }
 
 .cancelBtn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
+    background: #f9fafb;
+    color: #111827;
 }
 
 .deleteBtn {
-    background: rgba(239, 68, 68, 0.1);
-    color: #f87171;
-    border-color: rgba(239, 68, 68, 0.2);
+    background: #fef2f2;
+    color: #b91c1c;
+    border-color: #fca5a5;
     margin-right: auto;
 }
 
 .deleteBtn:hover {
-    background: rgba(239, 68, 68, 0.2);
-    color: #ef4444;
+    background: #fee2e2;
+    color: #991b1b;
 }
 
 @media (max-width: 640px) {

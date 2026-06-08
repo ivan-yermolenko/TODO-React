@@ -3,7 +3,7 @@
     min-height: calc(100vh - 72px); /* Full height minus header height */
     display: flex;
     flex-direction: column;
-    background: radial-gradient(circle at 50% 0%, #111827 0%, #030712 100%);
+    background: #f9fafb;
 }
 
 .container {
