@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { Task as ITask } from "@/components/Task/task.interface";
 import styles from "./Task.module.css";
 
 export default function Task({ task }: { task: ITask }) {
-    const { title, description, dateTime, reminder, status } = task;
+    const { uuid, title, description, dateTime, reminder, status } = task;
 
     // Map status to styles
     let statusClass = styles.pending;
@@ -21,7 +22,7 @@ export default function Task({ task }: { task: ITask }) {
     });
 
     return (
-        <div className={`${styles.taskCard} ${statusClass}`}>
+        <Link href={`/task/${uuid}`} className={`${styles.taskCard} ${statusClass}`}>
             <header className={styles.cardHeader}>
                 <h3 className={styles.taskTitle}>{title}</h3>
                 <span className={styles.statusBadge}>{status}</span>
@@ -43,6 +44,6 @@ export default function Task({ task }: { task: ITask }) {
                     )}
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }
