@@ -1,8 +1,8 @@
 :root {
   --background: #f9fafb;
   --foreground: #111827;
-  --font-sans: var(--font-geist-sans), Inter, system-ui, -apple-system, sans-serif;
-  --font-mono: var(--font-geist-mono), monospace;
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-mono), monospace;
 }
 
 * {
